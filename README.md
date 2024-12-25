@@ -1,5 +1,7 @@
 # Learning C
 
+Learning C is a collection of projects and exercises that I've been working on to improve my skills in the C programming language.
+
 ## Terminal Game
 
 This is a simple terminal-based game built in C. It's a text-based adventure game where the player navigates through different rooms, encounters enemies, and collects items to survive.
