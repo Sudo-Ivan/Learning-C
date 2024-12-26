@@ -2,9 +2,11 @@ CC = gcc
 CFLAGS = -Wall -Wextra
 LIBS = -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
-TARGET = game
-SRCS = main.c AI.c
+SRCS = src/main.c src/game.c src/menu.c
 OBJS = $(SRCS:.c=.o)
+TARGET = main
+
+all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(CC) $(OBJS) -o $(TARGET) $(LIBS)
@@ -13,6 +15,4 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(TARGET) $(OBJS)
-
-.PHONY: clean 
+	rm -f $(OBJS) $(TARGET) 

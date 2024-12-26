@@ -1,2 +1,9 @@
 *.log
 *.o
+emsdk/
+main
+game
+gtk4-otp-app/otp-app
+libsodium-basics/decrypt
+libsodium-basics/encrypt
+a-raylib-game-2d/effects-creator.py
